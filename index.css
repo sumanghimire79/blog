@@ -1,5 +1,7 @@
 /* reset code and common code starts here  */
 :root{
+  --transition: all 0.3s;
+  --scale:scale(1.1);
 }
 
 *{
@@ -23,6 +25,40 @@ body{
   max-width: 100%;
   margin: auto;
   box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4,  -0.1rem 0rem 0.1rem #c4c4c4;
+}
+.text-justify{
+  text-align: justify;
+}
+.text-white{
+  color: #fff;
+}
+.btn{
+  background-color: rgb(230, .159, .8);
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  box-shadow: 0.11rem 0.1rem 0.1rem #222;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+.section-heading{
+font-size: 6rem;
+text-align: center;
+font-family:'Italiano' , cursive;
+}
+.section-center{
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+  justify-content: space-evenly;
+  align-items: center;
+}
+img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 /* reset code and common code ends here  */
 
@@ -54,7 +90,8 @@ nav ul{
   }
   nav ul li {
     padding: 1rem;
-    transition: all 0.4s ;
+    /* transition: all 0.4s ; */
+    transition: var(--transition) ;
   
   }
   nav ul li:hover{
@@ -69,15 +106,167 @@ nav ul{
 /* header ends here */
 
 
+/* banner section here */
+.banner{
+  padding: 5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 95vh;
+
+}
+.banner article{
+  flex-basis: 50%;
+  margin: 1rem;
+ 
+}
+.banner__heading{
+display: inline-block;
+padding: 1rem;
+background-color: black;
+color: #fff;
+margin-bottom: 1.5rem;
+font-size: 4rem;
+}
+.banner__description{
+  font-size: 1.8rem;
+
+}
+.banner aside{
+  flex-basis: 50%;
+  text-align: center;
+}
+.banner__img{
+  width: 55rem;
+  height: 55rem;
+  border: 0.5rem solid;
+}
+/* banner section ends here */
+
+/* about-me setction starts here */
+#blog-about{
+  background-color:#4c4c4c;
+}
+.cards{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.card{
+  flex: 1;
+  background-color: #a09d9d;
+  border-radius: 0.6rem;
+  padding: 3rem 2rem;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* transition: all 0.3s; */
+  transition: var(--transition);
+  gap: 0.6rem;
+}
+.card:hover{
+  /* transform: scale(1.1); */
+  transform: var(--scale);
+}
+
+.card__header{
+  font-size: 3rem;
+}
+.card__description{
+  padding: 0.4rem 0;
+  font-size: 1.6rem;
+ margin-bottom: 1rem;
+}
+.card__btn{
+  width: 80%;
+}
+
+
+/* about-me setction ends here */
+
+/* archieve section starts here */
+
+.archieves-container{
+ 
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  border-top: 0.1rem solid;
+  border-bottom: 0.1rem solid;
+}
+.archieves__lists{
+display: flex;
+text-align: center;
+gap: 2rem;
+
+}
+.archieves__list{
+  
+}
+.archieves__img{
+  width: 100%;
+  height: 100%;
+  border-radius: 0.6rem;
+  /* transition: all 0.3s; */
+  transition: var(--transition);
+}
+.archieves__img:hover{
+ transform: var(--scale);
+}
+
+/* archieve section ends here */
+
+/* blog-post section start here */
+.blog-post{
+  width: 70%;
+  display: flex;
+  margin: 1rem 0;
+  box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4,  -0.1rem 0rem 0.1rem #c4c4c4;
+transition: var(--transition);
+}
+.blog-post:hover{
+  transform: var(--scale);
+}
+blog-post__heading{
+  margin-bottom: 5rem;
+}
+/* blog-post section ends here */
+
+
 /* responsiveness starts here */
 
 @media screen and (max-width:992px){
-  
+  .banner {
+
+    flex-direction: column;
+      }
+      .banner article{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+      }
+ 
 }
 @media screen and (max-width:768px){
   html{
     font-size: 55.5%;
   }
+  .banner article{
+    width: 80%;
+
+  }
+  .cards{
+    flex-direction: column;
+    width: 80%;
+  }
+  #archives{
+    min-height: auto;
+  }
+ 
 }
 @media screen and (max-width:600px){
   html{
@@ -90,5 +279,30 @@ nav ul{
    flex-direction: column;
     padding-left: 2.5rem;
     }
-}
+    .banner{
+      min-height: auto;
+    }
+    .banner article{
+   
+      width: 90%;
+    }
+    .banner__img{
+      width: 100%;
+    }
+    #blog-about{
+      min-height: auto;
+      display: flex;
+      
+    }
+    .cards{
+      width: 90%;
+    }
+    .archieves__lists{
+flex-wrap: wrap;
+
+flex-direction: column;
+width: 90%;
+gap: 3rem;
+    }
+  }
 /* responsiveness ends here */
