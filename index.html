@@ -27,15 +27,20 @@
   <!-- header start here -->
   <header id="blog-header">
     <figure class="logo-figure">
-      <i class="fab fa-autoprefixer logo"></i>
+      <a class="footer__link" href="#blog-banner-section" >
+      <i class="fa-sharp fa-solid fa-s logo"></i><i class="fa-sharp fa-solid fa-g logo"></i></a>
+      
     </figure>
-    <nav id="menu-icon">
+
+<i class="fas fa-bars fa-4x" id="menu_icon"></i>
+
+    <nav id="menu" class="hidden">
       <ul>
         <li><a class="nav_link" href="#">Home</a></li>
-        <li> <a class="nav_link" href="#">About</a></li>
-        <li><a class="nav_link" href="#">Archieves</a></li>
-        <li> <a class="nav_link" href="#">Blog Posts</a></li>
-        <li><a class="nav_link" href="#">Contact</a></li>
+        <li> <a class="nav_link" href="#blog-about">About</a></li>
+        <li><a class="nav_link" href="#archieve">Archieves</a></li>
+        <li> <a class="nav_link" href="#blog-posts">Blog Posts</a></li>
+        <li><a class="nav_link" href="#contact-section">Contact</a></li>
       </ul>
 
     </nav>
@@ -70,13 +75,13 @@
           <button class="btn card__btn">Read More</button>
         </div>
         <div class="card">
-          <h3 class="card__header">Education</h3>
+          <h3 class="card__header">Work Experience</h3>
           <p class="card__description text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
             totam! Autem aperiam unde ipsa accusamus neque suscipit voluptas est modi!</p>
           <button class="btn card__btn">Read More</button>
         </div>
         <div class="card">
-          <h3 class="card__header">Education</h3>
+          <h3 class="card__header">Skills</h3>
           <p class="card__description text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
             totam! Autem aperiam unde ipsa accusamus neque suscipit voluptas est modi!</p>
           <button class="btn card__btn">Read More</button>
@@ -113,7 +118,7 @@
       <div class="blog-posts">
         <div class="blog-post">
           <aside class="blog-post__aside">
-            <img src="./images/cover-photo.webp" alt="blogpost-img1">
+            <img class="blog-post__img" src="./images/cover-photo.webp" alt="blogpost-img1">
           </aside>
           <article class="blog-post__content">
             <h2 class="blog-post__heading"> Blog1 </h2>
@@ -126,7 +131,7 @@
         </div>
         <div class="blog-post">
           <aside class="blog-post__aside">
-            <img src="./images/cover-photo.webp" alt="blogpost-img1">
+            <img class="blog-post__img" src="./images/cover-photo.webp" alt="blogpost-img1">
           </aside>
           <article class="blog-post__content">
             <h2 class="blog-post__heading"> Blog2 </h2>
@@ -139,7 +144,7 @@
         </div>
         <div class="blog-post">
           <aside class="blog-post__aside">
-            <img src="./images/cover-photo.webp" alt="blogpost-img1">
+            <img class="blog-post__img" src="./images/cover-photo.webp" alt="blogpost-img1">
           </aside>
           <article class="blog-post__content">
             <h2 class="blog-post__heading"> Blog3 </h2>
@@ -153,8 +158,48 @@
       </div>
     </section>
     <!-- blog-posts section ends here -->
+
+
+    <!-- contact section starts here -->
+<section id="contact-section" class="section-center">
+
+  <h2 class="section-heading text-white">Contact Me</h2>
+  <form>
+
+    <div class="form-control">
+      <label for="name">Name</label>
+      <input type="text" id="name" autocomplete="name" required>
+    </div>
+    <div class="form-control">
+      <label for="email">Email</label>
+      <input type="email" id="email" autocomplete="enail" required>
+    </div>
+    <div class="form-control">
+      <label for="message">Message</label>
+      <textarea name="message" id="message"></textarea>
+    </div>
+    <div class="form-control form-btn-field">
+     <button class="btn contact__btn">Submit</button>
+    </div>
+  </form>
+</section>
+
+
+    <!-- contact section ends here -->
   </main>
-  <footer> I am footer</footer>
+  <footer class="footer"> <p class="copyright__text">
+    Copyright &copy; by Suman Ghimire. All rights reserved
+  </p>
+<nav class="footer__nav">
+  <a class="footer__link" href="#blog-banner-section" ><i class="fa fa-home footer__icon"></i></a>
+  <a class="footer__link" href="https://www.facebook.com/suman.ghimire.98/" target="_blank"><i class="fab fa-facebook footer__icon"></i></a>
+  <a class="footer__link" href="https://www.linkedin.com/in/sumanghimire/" target="_blank"><i class="fab fa-linkedin footer__icon"></i></a>
+  <a class="footer__link" href="https://github.com/sumanghimire79" target="_blank"><i class="fab fa-github footer__icon"></i></a>
+  <a class="footer__link" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube footer__icon"></i></a>
+
+</nav>
+</footer>
+<script src="./index.js"></script>
 </body>
 
 </html>
