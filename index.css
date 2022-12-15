@@ -19,7 +19,7 @@ html {
   background-color: #fafafa;
   scroll-behavior: smooth;
   font-size: 62.5%;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -39,7 +39,7 @@ body {
 }
 
 .btn {
-  background-color: rgb(230, .159, .8);
+  background-color: rgb(230, 0.159, 0.8);
   border: none;
   border-radius: 0.6rem;
   cursor: pointer;
@@ -72,7 +72,6 @@ img {
 
 /* reset code and common code ends here  */
 
-
 /* header starts here */
 
 header {
@@ -99,14 +98,12 @@ header {
 nav ul {
   display: flex;
   gap: 2rem;
-
 }
 
 nav ul li {
   padding: 1rem;
   /* transition: all 0.4s ; */
   transition: var(--transition);
-
 }
 
 nav ul li:hover {
@@ -122,7 +119,6 @@ nav ul li:hover {
 
 /* header ends here */
 
-
 /* banner section here */
 .banner {
   padding: 5rem 1rem;
@@ -130,13 +126,11 @@ nav ul li:hover {
   align-items: center;
   justify-content: center;
   min-height: 95vh;
-
 }
 
 .banner article {
   flex-basis: 50%;
   margin: 1rem;
-
 }
 
 .banner__heading {
@@ -150,7 +144,6 @@ nav ul li:hover {
 
 .banner__description {
   font-size: 1.8rem;
-
 }
 
 .banner aside {
@@ -210,13 +203,11 @@ nav ul li:hover {
   width: 80%;
 }
 
-
 /* about-me setction ends here */
 
 /* archieve section starts here */
 
 .archieves-container {
-
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -229,10 +220,10 @@ nav ul li:hover {
   display: flex;
   text-align: center;
   gap: 2rem;
-
 }
 
-.archieves__list {}
+.archieves__list {
+}
 
 .archieves__img {
   width: 100%;
@@ -280,7 +271,6 @@ nav ul li:hover {
 
 .blog-post__sub-heading {
   font-size: 2rem;
-
 }
 
 .blog-post__img {
@@ -309,7 +299,6 @@ form {
   margin: 1rem;
   display: flex;
   flex-direction: column;
-
 }
 
 .form-control {
@@ -322,17 +311,15 @@ form {
 .form-control label {
   font-size: 1.6rem;
   flex: 0.3;
-
 }
 
-.form-control>input,
+.form-control > input,
 textarea {
   flex: 0.7;
   width: 40rem;
   padding: 2rem 1rem;
   border: none;
   border-radius: 0.6rem;
-
 }
 
 textarea {
@@ -347,7 +334,6 @@ textarea {
 
 .contact__btn {
   width: 30%;
-
 }
 
 /* contact section ends here */
@@ -376,11 +362,10 @@ textarea {
 .footer__link:hover {
   color: orange;
   /* transform: var(--scale); */
-  transform: scale(2)
+  transform: scale(2);
 }
 
 .footer__nav {
-
   display: flex;
   gap: 1.5rem;
 }
@@ -393,9 +378,8 @@ textarea {
 
 /* responsiveness starts here */
 
-@media screen and (max-width:992px) {
+@media screen and (max-width: 992px) {
   .banner {
-
     flex-direction: column;
   }
 
@@ -406,17 +390,15 @@ textarea {
     align-items: center;
     margin-bottom: 5rem;
   }
-
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   html {
     font-size: 55.5%;
   }
 
   .banner article {
     width: 80%;
-
   }
 
   .cards {
@@ -431,7 +413,6 @@ textarea {
   .blog-post {
     width: 80%;
     flex-direction: column;
-
   }
 
   #contact-section {
@@ -439,7 +420,7 @@ textarea {
   }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   html {
     font-size: 48.5%;
   }
@@ -451,7 +432,6 @@ textarea {
   #menu_icon {
     display: block;
     margin: 2rem 0;
-
   }
 
   .hidden {
@@ -468,7 +448,6 @@ textarea {
   }
 
   .banner article {
-
     width: 90%;
   }
 
@@ -479,7 +458,6 @@ textarea {
   #blog-about {
     min-height: auto;
     display: flex;
-
   }
 
   .cards {
@@ -499,8 +477,6 @@ textarea {
 
   .blog-post {
     width: 90%;
-
-
   }
   .blog-post:hover {
     transform: scale(1.05);
@@ -508,7 +484,6 @@ textarea {
   .blog-post__img {
     width: 100%;
     height: 100%;
-
   }
 
   form {
@@ -519,10 +494,9 @@ textarea {
     flex-direction: column;
   }
 
-  .form-control>input,
+  .form-control > input,
   textarea {
     margin-bottom: 0.5rem;
-
   }
 
   .footer {
